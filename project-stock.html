@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price Prediction & Risk Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <h1 class="name">Stock Price Prediction</h1>
+            <p class="title">CNN-LSTM & Risk Analysis Project</p>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index (1).html" class="nav-link active">Back to Portfolio</a></li>
+                <li>
+                    <a href="https://github.com/alviyuana15/stock-price-prediction-cnn-lstm.git" target="_blank" class="nav-link">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Stock Price Prediction & Risk Analysis</h2>
+
+        <div class="project-card">
+            <h3 class="project-title">Project Overview</h3>
+            <p class="project-description">
+                This project is a web-based stock price prediction and investment risk analysis system
+                developed as my thesis project. The system uses a hybrid CNN-LSTM model to predict stock
+                prices based on historical data and applies Value at Risk (VaR) with Cornish-Fisher Expansion
+                to estimate potential investment losses.
+            </p>
+
+            <p class="project-description">
+                The dashboard allows users to upload stock datasets, generate short-term stock price forecasts,
+                compare actual and predicted prices, and analyze investment risk through interactive visualizations.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Objectives</h2>
+
+        <div class="project-card">
+            <ul>
+                <li>Develop a web-based dashboard for stock price prediction.</li>
+                <li>Implement CNN-LSTM for time-series forecasting using historical stock data.</li>
+                <li>Provide 7-day future price prediction for Close, High, Low, and Open prices.</li>
+                <li>Analyze potential investment risk using Value at Risk (VaR).</li>
+                <li>Present prediction and risk analysis results through interactive charts.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Tools & Technologies</h2>
+
+        <div class="project-tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">CNN-LSTM</span>
+            <span class="tool-tag">Flask</span>
+            <span class="tool-tag">JavaScript</span>
+            <span class="tool-tag">Chart.js</span>
+            <span class="tool-tag">HTML</span>
+            <span class="tool-tag">CSS</span>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Key Features</h2>
+
+        <div class="project-card">
+            <h3 class="project-title">1. Dashboard Page</h3>
+            <p class="project-description">
+                The dashboard page provides an overview of the stock analysis system and guides users
+                to access prediction, risk analysis, and future prediction menus from the sidebar.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/stock-dashboard.png" alt="Stock Prediction Dashboard">
+                    <p style="text-align:center;">Dashboard Overview</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">2. Stock Price Prediction</h3>
+            <p class="project-description">
+                Users can upload a stock dataset in CSV format. After the upload process, the system
+                generates prediction visualizations for Close, High, Low, and Open prices by comparing
+                actual prices, predicted prices, and future prediction results.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/stock-predict-1.png" alt="Stock Prediction Upload Page">
+                    <p style="text-align:center;">CSV Upload for Prediction</p>
+                </div>
+
+                <div>
+                    <img src="images/stock-predict-2.png" alt="Stock Prediction Result">
+                    <p style="text-align:center;">Prediction Result Charts</p>
+                </div>
+
+                <div>
+                    <img src="images/stock-predict-3.png" alt="Stock Prediction Result Interactive Fitur">
+                    <p style="text-align:center;">Prediction Result Charts Interactive</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">3. Future Prediction</h3>
+            <p class="project-description">
+                The system provides a 7-day stock price forecast. The output is displayed through
+                line charts for Close, High, Low, and Open price predictions, helping users understand
+                possible short-term price movements.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/stock-future-1.png" alt="Future Prediction Upload Page">
+                    <p style="text-align:center;">Future Prediction Upload</p>
+                </div>
+
+                <div>
+                    <img src="images/stock-future-2.png" alt="7-Day Future Prediction Result">
+                    <p style="text-align:center;">7-Day Prediction Result</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">4. Risk Analysis</h3>
+            <p class="project-description">
+                This feature evaluates investment risk based on predicted stock returns. The system calculates
+                Value at Risk (VaR) at 95% and 99% confidence levels and visualizes the risk distribution for
+                each predicted feature.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/stock-risk-1.png" alt="Risk Analysis Upload Page">
+                    <p style="text-align:center;">Risk Analysis Upload</p>
+                </div>
+
+                <div>
+                    <img src="images/stock-risk-2.png" alt="Risk Analysis Result">
+                    <p style="text-align:center;">VaR Risk Visualization</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">5. Upload Notification</h3>
+            <p class="project-description">
+                The system provides upload status notifications to inform users when a file has been
+                successfully uploaded and processed.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/stock-upload-1.png" alt="Prediction Upload Notification">
+                    <p style="text-align:center;">Prediction Upload Success</p>
+                </div>
+
+                <div>
+                    <img src="images/stock-upload-2.png" alt="Risk Analysis Upload Notification">
+                    <p style="text-align:center;">Risk Analysis Upload Success</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Results & Impact</h2>
+
+        <div class="project-card">
+            <ul>
+                <li>Built a dashboard that supports stock price forecasting and investment risk analysis.</li>
+                <li>Implemented CNN-LSTM to capture historical stock price patterns.</li>
+                <li>Displayed prediction results through clear and interactive visualizations.</li>
+                <li>Provided risk estimation using VaR 95% and VaR 99% to support investment decision-making.</li>
+                <li>Improved accessibility of stock prediction analysis through a web-based interface.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">GitHub Repository</h2>
+
+        <div class="project-card">
+            <p class="project-description">
+                Source code and project implementation are available on GitHub.
+            </p>
+
+            <a href="https://github.com/alviyuana15/stock-price-prediction-cnn-lstm.git" target="_blank" class="project-link">
+                View Source Code on GitHub →
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p class="footer-copyright">© 2026 Alvi Yuana Febriyanti. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

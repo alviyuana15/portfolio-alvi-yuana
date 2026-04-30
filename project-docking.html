@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ship Docking Duration Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <h1 class="name">Ship Docking Analysis</h1>
+            <p class="title">Data Analysis & Forecasting Project</p>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index (1).html" class="nav-link active">Back to Portfolio</a></li>
+                <li><a href="https://github.com/alviyuana15/arima-docking-forecast.git" target="_blank" class="nav-link">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Ship Docking Duration Analysis & Forecasting</h2>
+
+        <div class="project-card">
+            <h3 class="project-title">Project Overview</h3>
+            <p class="project-description">
+                This project analyzes ship docking records to understand docking duration patterns,
+                identify abnormal docking time, and forecast future docking duration. The analysis
+                supports operational monitoring by transforming historical docking data into useful
+                insights for planning and decision-making.
+            </p>
+
+            <p class="project-description">
+                The analysis includes data cleaning, descriptive statistics, outlier detection,
+                stationarity testing, time-series diagnostics, and forecasting using ARIMA/SARIMA-based
+                modeling.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Objectives</h2>
+
+        <div class="project-card">
+            <ul>
+                <li>Analyze historical ship docking duration patterns.</li>
+                <li>Clean and prepare docking data for analysis.</li>
+                <li>Detect abnormal docking durations using statistical and machine learning methods.</li>
+                <li>Evaluate time-series characteristics using stationarity and autocorrelation analysis.</li>
+                <li>Forecast future docking duration to support operational planning.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Tools & Technologies</h2>
+
+        <div class="project-tools">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">Pandas</span>
+            <span class="tool-tag">NumPy</span>
+            <span class="tool-tag">Matplotlib</span>
+            <span class="tool-tag">Seaborn</span>
+            <span class="tool-tag">Scikit-learn</span>
+            <span class="tool-tag">Statsmodels</span>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Analysis Documentation</h2>
+
+        <div class="project-card">
+            <h3 class="project-title">1. Data Preparation</h3>
+            <p class="project-description">
+                The dataset was cleaned by handling missing values, converting docking and undocking
+                dates into datetime format, and validating docking duration values. This step ensures
+                the data is ready for further statistical and time-series analysis.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/docking-data-preview.png" alt="Docking Dataset Preview">
+                    <p style="text-align:center;">Dataset Preview</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">2. Docking Duration Trend</h3>
+            <p class="project-description">
+                A time-series visualization was created to observe docking duration over time. This helps
+                identify whether docking duration shows increasing, decreasing, seasonal, or irregular
+                patterns.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/docking-trend-1.png" alt="Docking Duration Trend">
+                    <p style="text-align:center;">Docking Duration Over Time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">3. Outlier Detection</h3>
+            <p class="project-description">
+                Outlier detection was performed using Z-score, IQR, and Isolation Forest to identify
+                abnormal docking durations. These anomalies may indicate unusual operational conditions,
+                delayed processes, or data irregularities that require further investigation.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/docking-outlier-1.png" alt="Docking Outlier Detection">
+                    <p style="text-align:center;">Outlier Detection Result</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">4. Descriptive Statistics</h3>
+            <p class="project-description">
+                Descriptive statistics were used to summarize numerical, categorical, and date-based
+                information. This provides a clearer understanding of docking duration range, vessel
+                records, owners, docking locations, and date coverage.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/docking-statistics-1.png" alt="Numerical Statistics">
+                    <p style="text-align:center;">Numerical Statistics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">5. Time-Series Diagnostics</h3>
+            <p class="project-description">
+                The stationarity of docking duration was evaluated using the Augmented Dickey-Fuller
+                test. ACF and PACF plots were also used to understand autocorrelation patterns and support
+                ARIMA/SARIMA model selection.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/docking-timeseries-1.png" alt="ADF Test and Stationarity">
+                    <p style="text-align:center;">Stationarity Test</p>
+                </div>
+
+                <div>
+                    <img src="images/docking-timeseries-2.png" alt="ACF and PACF Plot">
+                    <p style="text-align:center;">ACF & PACF Diagnostics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">6. Forecasting Result</h3>
+            <p class="project-description">
+                ARIMA/SARIMA-based forecasting was applied to estimate future docking duration. The result
+                can support docking schedule planning, resource allocation, and early identification of
+                possible operational delays.
+            </p>
+
+            <div class="image-group">
+                <div>
+                    <img src="images/docking-forecast-1.png" alt="Docking Forecast Result">
+                    <p style="text-align:center;">Actual vs Forecast</p>
+                </div>
+
+                <div>
+                    <img src="images/docking-forecast-2.png" alt="Forecast Evaluation">
+                    <p style="text-align:center;">Forecast Evaluation</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Results & Impact</h2>
+
+        <div class="project-card">
+            <ul>
+                <li>Identified docking duration patterns from historical ship docking data.</li>
+                <li>Detected abnormal docking durations using multiple outlier detection methods.</li>
+                <li>Evaluated time-series behavior through stationarity and autocorrelation analysis.</li>
+                <li>Built forecasting analysis to estimate future docking duration.</li>
+                <li>Provided analytical insights to support docking planning and operational monitoring.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">GitHub Repository</h2>
+
+        <div class="project-card">
+            <p class="project-description">
+                Source code and project implementation are available on GitHub.
+            </p>
+
+            <a href="https://github.com/alviyuana15/arima-docking-forecast.git" target="_blank" class="project-link">
+                View Source Code on GitHub →
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p class="footer-copyright">© 2026 Alvi Yuana Febriyanti. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
